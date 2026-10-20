@@ -58,10 +58,10 @@
 }
 
 .site-header.is-compact .header-inner {
-  width: min(1000px, calc(100% - 24px));
+  width: min(900px, calc(100% - 24px));
   min-height: 0;
   margin: 12px auto 0;
-  padding: 8px 28px;
+  padding: 8px 22px;
   gap: 28px;
 
   background: rgba(12, 13, 18, 0.97);
