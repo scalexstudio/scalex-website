@@ -148,3 +148,10 @@
   border: 1px solid #242630;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }
+/* Adjust floating navbar size and position */
+.site-header.is-compact .header-inner {
+  margin-top: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 32px;
+}
