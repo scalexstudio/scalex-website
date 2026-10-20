@@ -119,3 +119,17 @@
   position: relative;
   z-index: 2;
 }
+/* Final responsive pill position */
+.site-header.is-compact .header-inner {
+  margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+  .site-header.is-compact .header-inner {
+    width: calc(100% - 24px);
+    max-width: 480px;
+    margin-top: 10px;
+    padding: 8px 14px;
+    gap: 12px;
+  }
+}
