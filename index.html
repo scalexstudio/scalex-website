@@ -11,7 +11,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-</head>
+<style>
+/* Responsive navigation and mobile overflow fixes */
+html, body { max-width:100%; overflow-x:hidden; }
+img, video, iframe { max-width:100%; }
+*, *::before, *::after { box-sizing:border-box; }
+.container, main, section, article, header, footer { min-width:0; }
+p, h1, h2, h3, h4, a, blockquote, li { overflow-wrap:anywhere; }
+.site-header .nav-wrap { min-width:0; }
+.simple-nav { width:100%; max-width:100%; min-width:0; flex-direction:row !important; align-items:center !important; justify-content:space-between !important; flex-wrap:wrap; }
+.simple-nav .nav-links { display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:flex-end; min-width:0; max-width:100%; gap:clamp(10px,2vw,24px) !important; }
+.simple-nav .nav-links a { white-space:normal; line-height:1.4; }
+@media (max-width: 900px) {
+  .container { width:min(100% - 32px, 1160px); }
+  .simple-nav { gap:14px !important; }
+  .simple-nav .nav-links { justify-content:flex-start; flex:1 1 100%; }
+}
+@media (max-width: 600px) {
+  .container { width:calc(100% - 32px); }
+  .simple-nav { display:flex !important; flex-direction:column !important; align-items:flex-start !important; gap:18px !important; padding:18px 0 !important; }
+  .simple-nav .nav-links { display:grid !important; grid-template-columns:repeat(3, minmax(0,1fr)); width:100%; gap:12px 8px !important; justify-content:stretch; }
+  .simple-nav .nav-links a { display:block; min-width:0; font-size:12px !important; white-space:normal; overflow-wrap:anywhere; }
+  .nav-wrap { height:auto !important; min-height:70px; flex-wrap:wrap; gap:12px !important; padding-top:16px; padding-bottom:16px; }
+  .nav-wrap .nav-links { width:100%; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px 8px; }
+  .nav-wrap .nav-links a { min-width:0; white-space:normal; overflow-wrap:anywhere; font-size:12px; }
+  .menu-toggle { display:none !important; }
+  .section { padding:64px 0; }
+  .hero { min-height:0; padding:52px 0 24px; }
+  .hero-inner { grid-template-columns:minmax(0,1fr) !important; gap:24px; min-height:0; }
+  h1 { font-size:clamp(38px,11vw,58px); letter-spacing:-1.8px; line-height:1.04; }
+  .section-heading { flex-direction:column; align-items:flex-start; gap:18px; }
+  .editorial-grid { grid-template-columns:minmax(0,1fr) !important; gap:28px; }
+  .founder-column { width:100%; max-width:240px !important; }
+  .founder-photo { width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; }
+  .blog-grid, .review-grid, .pricing-grid, .service-grid, .why-grid, .faq-grid { grid-template-columns:minmax(0,1fr) !important; }
+  .page-title { font-size:clamp(34px,9vw,48px) !important; letter-spacing:-1.3px !important; overflow-wrap:anywhere; }
+  .page-lede, .article-copy p, .article-shell p, .article-shell li { font-size:15px; }
+  .founder-quote { font-size:18px; padding:16px; }
+  .strip-inner { flex-wrap:wrap; padding:18px 0; }
+  .strip-inner p { min-width:0; font-size:16px; }
+  .hero-art { min-height:300px; transform:scale(.88); transform-origin:top center; margin-bottom:-28px; }
+}
+</style></head>
 <body>
   <div class="announcement"><span class="pulse"></span> HUMAN-LED INSTAGRAM GROWTH <span class="announcement-sep">/</span> BUILT ON REAL CONNECTIONS</div>
   <header class="site-header">
