@@ -89,3 +89,46 @@
   font-size: 0.9rem;
   white-space: nowrap;
 }
+/* SCALE X - Ascend style floating navbar */
+.site-header.is-compact {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.site-header.is-compact .header-inner {
+  width: fit-content;
+  max-width: calc(100% - 24px);
+  min-height: 0;
+  margin: 12px auto 0;
+  padding: 8px 24px;
+  gap: 28px;
+
+  background: #0d0e13;
+  border: 1px solid #242630;
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+}
+
+.site-header.is-compact .brand {
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+
+.site-header.is-compact .nav-links {
+  gap: 22px;
+}
+
+.site-header.is-compact .nav-links a {
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .site-header.is-compact .header-inner {
+    width: calc(100% - 20px);
+    padding: 8px 14px;
+    gap: 12px;
+  }
+}
