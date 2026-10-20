@@ -1,0 +1,7 @@
+title: SCALE X — Creative Growth Studio
+description: Practical Instagram growth articles from SCALE X.
+url: "https://scalexstudio.github.io"
+baseurl: "/scalex-website"
+permalink: /blog/:title/
+markdown: kramdown
+plugins: []
