@@ -132,3 +132,19 @@
     gap: 12px;
   }
 }
+.site-header.is-compact {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.site-header.is-compact .header-inner {
+  margin: 8px auto 0;
+  padding: 7px 22px;
+  gap: 24px;
+  border-radius: 999px;
+  background: #0b0c11;
+  border: 1px solid #242630;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
