@@ -68,3 +68,24 @@
 .site-header.is-compact .nav-links a {
   font-size: 0.9rem;
 }
+  background: rgba(12, 12, 16, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.site-header.is-compact .nav-links {
+  gap: 20px;
+}
+
+.site-header.is-compact .brand {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.site-header.is-compact .nav-links a {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
