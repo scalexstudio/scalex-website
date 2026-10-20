@@ -104,3 +104,18 @@
     transition: none !important;
   }
 }
+/* Hide the original header background while pill is active */
+.site-header.is-compact {
+  background: transparent !important;
+  border-bottom: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+.site-header.is-compact .header-inner {
+  background: #0b0c11 !important;
+  border: 1px solid #242630 !important;
+  border-radius: 999px;
+  position: relative;
+  z-index: 2;
+}
