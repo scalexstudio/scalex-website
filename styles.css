@@ -6,3 +6,47 @@
 @media(max-width:700px){:root{--header-h:68px}.container{width:calc(100% - 36px)}html{scroll-padding-top:82px}.announcement{font-size:9px;letter-spacing:.1em;min-height:34px}.header-inner{min-height:68px;position:relative}.brand{font-size:26px}.menu-toggle{display:flex;flex:0 0 44px}.nav-links{display:none;position:absolute;top:calc(100% + 1px);left:-18px;right:-18px;padding:14px 18px 20px;background:#0b0b0b;border-bottom:1px solid #333;box-shadow:0 18px 30px rgba(0,0,0,.35);grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px;align-items:stretch}.nav-links.is-open{display:grid}.nav-links a{padding:14px 10px;border-bottom:1px solid #222;font-size:14px;white-space:normal}.nav-links a:last-child{border-bottom:0}.hero{padding:58px 0 48px}.hero-grid{grid-template-columns:1fr;gap:35px}.hero h1{font-size:clamp(43px,12vw,66px);line-height:1.02}.hero-copy .lead{font-size:17px}.hero-art{min-height:300px}.art-center{max-width:310px}.art-center strong{font-size:26px}.orange-band{padding:24px 0}.orange-band-inner{display:block}.orange-band .label{display:block;margin-bottom:10px}.orange-band p{font-size:22px}.section{padding:68px 0;scroll-margin-top:80px}.services-head,.section-head{display:block;margin-bottom:30px}.services-head .btn,.section-head .btn{margin-top:20px}.service-grid{grid-template-columns:1fr}.service-card{min-height:0;padding:24px}.service-icon{margin-bottom:24px}.process-item{grid-template-columns:40px 1fr;gap:10px 15px;padding:22px 0}.process-item p{grid-column:2}.split{grid-template-columns:1fr;gap:35px}.split h2{font-size:38px}.pricing-grid{grid-template-columns:1fr}.price-card{padding:25px}.page-hero{padding:58px 0 44px}.page-hero h1{font-size:clamp(42px,11vw,64px)}.page-hero .lead{font-size:17px}.about-layout{grid-template-columns:1fr;gap:36px}.founder-column{width:100%;max-width:290px}.founder-photo{aspect-ratio:4/4.5}.article-copy{font-size:15px;line-height:1.85}.quote{font-size:18px;padding:18px}.stats-grid{grid-template-columns:1fr;gap:10px}.stat{padding:18px}.blog-grid,.review-grid{grid-template-columns:1fr}.blog-card,.review-card{padding:22px}.contact-box{display:block}.contact-box .btn{margin-top:18px}.footer-top,.footer-bottom{display:block}.footer-links{margin-top:20px;gap:14px}.footer-bottom p+p{margin-top:8px}}
 @media(max-width:360px){.container{width:calc(100% - 28px)}.brand{font-size:23px}.hero h1{font-size:41px}.nav-links{left:-14px;right:-14px;padding-inline:14px}.nav-links a{font-size:13px;padding-inline:7px}.hero-actions .btn{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+/* SCALE X dynamic sticky navbar */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.25s ease;
+}
+
+.site-header .header-inner {
+  transition: min-height 0.25s ease, padding 0.25s ease;
+}
+
+.site-header .brand {
+  transition: font-size 0.25s ease;
+}
+
+.site-header.is-compact {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+.site-header.is-compact .header-inner {
+  min-height: 60px;
+}
+
+.site-header.is-compact .brand {
+  font-size: 1.65rem;
+}
+
+.site-header .nav-links a {
+  transition: padding 0.25s ease, font-size 0.25s ease;
+}
+
+.site-header.is-compact .nav-links a {
+  font-size: 0.94rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .site-header .header-inner,
+  .site-header .brand,
+  .site-header .nav-links a {
+    transition: none;
+  }
+}
