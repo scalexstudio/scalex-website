@@ -1,1 +1,22 @@
 document.addEventListener('DOMContentLoaded',()=>{const btn=document.querySelector('.menu-toggle');const nav=document.querySelector('#primary-navigation');if(btn&&nav){const close=()=>{btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Open navigation menu');nav.classList.remove('is-open')};btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')!=='true';btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');nav.classList.toggle('is-open',open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});window.addEventListener('resize',()=>{if(window.innerWidth>700)close()})}const year=document.querySelector('[data-year]');if(year)year.textContent=new Date().getFullYear();const page=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('[data-nav]').forEach(a=>{const k=a.dataset.nav;if((page==='about.html'&&k==='about')||(page==='blogs.html'&&k==='blogs')||(page==='reviews.html'&&k==='reviews'))a.setAttribute('aria-current','page')})});
+// SCALE X: Dynamic compact navbar
+(() => {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  let ticking = false;
+
+  const updateNavbar = () => {
+    header.classList.toggle('is-compact', window.scrollY > 50);
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateNavbar);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  updateNavbar();
+})();
