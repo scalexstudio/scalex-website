@@ -17,3 +17,9 @@
 .price-old-row .price-old{font-size:16px;color:#8d8d8d;text-decoration:line-through;text-decoration-thickness:1.5px}
 .discount-badge{display:inline-flex;align-items:center;padding:4px 8px;border-radius:4px;background:#2a160e;border:1px solid #6a371f;color:#ff9258;font-size:9px;font-weight:800;letter-spacing:.8px}
 .price-old-row+.price{margin-top:2px}
+
+/* Pricing discount row layout fix */
+.price-card .price-old-row{display:flex!important;align-items:center!important;gap:12px!important;margin:22px 0 0!important;line-height:1.4!important}
+.price-card .price-old-row .price-old{display:inline-block!important;font-family:var(--font)!important;font-size:16px!important;line-height:1.4!important;color:#888!important;text-decoration:line-through!important;text-decoration-thickness:1.5px!important;margin:0!important;letter-spacing:0!important;font-weight:500!important}
+.price-card .price-old-row .discount-badge{display:inline-flex!important;align-items:center!important;white-space:nowrap!important;padding:4px 8px!important;border-radius:4px!important;background:#2a160e!important;border:1px solid #6a371f!important;color:#ff9258!important;font-size:9px!important;line-height:1.4!important;font-weight:800!important;letter-spacing:.8px!important}
+.price-card .price-old-row+.price{margin:5px 0 17px!important}
