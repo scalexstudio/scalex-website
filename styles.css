@@ -155,3 +155,20 @@
   padding-right: 30px;
   gap: 32px;
 }
+/* Smooth navbar transition */
+.site-header,
+.site-header .header-inner,
+.site-header .brand,
+.site-header .nav-links,
+.site-header .nav-links a {
+  transition:
+    padding 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    margin 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    gap 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    font-size 0.3s ease,
+    border-radius 0.4s ease,
+    background-color 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
