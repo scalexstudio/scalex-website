@@ -50,3 +50,21 @@
     transition: none;
   }
 }
+/* Stronger compact navbar effect */
+.site-header.is-compact .header-inner {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-height: 0;
+}
+
+.site-header.is-compact .brand {
+  font-size: 1.5rem;
+}
+
+.site-header.is-compact .nav-links {
+  gap: 20px;
+}
+
+.site-header.is-compact .nav-links a {
+  font-size: 0.9rem;
+}
