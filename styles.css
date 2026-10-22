@@ -143,3 +143,12 @@
     margin-top: 18px !important;
   }
 }
+
+
+/* Growth Mate portal navigation actions */
+.nav-links .nav-portal-btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 15px;border:1px solid #414141;border-radius:9px;color:#f7f7f7;font-weight:700;transition:background .2s,border-color .2s,color .2s}
+.nav-links .nav-login:hover{border-color:var(--orange);color:var(--orange)}
+.nav-links .nav-signup{background:var(--orange);border-color:var(--orange);color:#111}
+.nav-links .nav-signup:hover{background:var(--orange2);border-color:var(--orange2);color:#111}
+@media(max-width:980px){.nav-links{gap:14px}.nav-links a{font-size:13px}.nav-links .nav-portal-btn{padding:8px 11px}}
+@media(max-width:760px){.nav-links .nav-portal-btn{width:100%;margin-top:4px;padding:12px}.nav-links .nav-signup{margin-bottom:8px}}
