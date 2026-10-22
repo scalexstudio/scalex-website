@@ -383,3 +383,14 @@ h3{font-size:21px}
 
 /* Actual portrait images inside creator profile avatars */
 .creator-avatar{overflow:hidden;padding:0!important;background:#222!important}.creator-avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+
+/* Match the desktop "Sign up for free" CTA on mobile */
+@media(max-width:700px){
+ .mobile-signup{font-size:14px!important;padding:14px 18px!important;border-radius:11px!important;font-weight:800!important;min-height:48px;letter-spacing:0;box-shadow:0 5px 18px rgba(255,106,26,.16)}
+}
+@media(max-width:380px){
+ .header-inner{gap:8px!important}
+ .brand{font-size:18px!important}
+ .mobile-signup{font-size:12px!important;padding:12px 10px!important;min-height:44px}
+ .menu-toggle{width:36px!important;height:36px!important;min-width:36px!important;flex-basis:36px!important}
+}
