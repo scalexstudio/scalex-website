@@ -152,3 +152,6 @@
 .nav-links .nav-signup:hover{background:var(--orange2);border-color:var(--orange2);color:#111}
 @media(max-width:980px){.nav-links{gap:14px}.nav-links a{font-size:13px}.nav-links .nav-portal-btn{padding:8px 11px}}
 @media(max-width:760px){.nav-links .nav-portal-btn{width:100%;margin-top:4px;padding:12px}.nav-links .nav-signup{margin-bottom:8px}}
+
+/* Pricing promotion labels */
+.price-original{font:500 22px/1.2 "DM Sans",sans-serif;letter-spacing:0;color:#888;text-decoration:line-through;vertical-align:middle;margin-right:7px}.price-discount{display:inline-flex;align-items:center;vertical-align:middle;padding:5px 8px;border-radius:5px;background:rgba(255,106,26,.13);border:1px solid rgba(255,106,26,.45);color:var(--orange);font:700 11px/1.2 "DM Sans",sans-serif;letter-spacing:.02em}
