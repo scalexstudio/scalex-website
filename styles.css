@@ -491,3 +491,98 @@ h1,h2,h3{color:#0F172A}
 @media(prefers-reduced-motion:no-preference){
  .site-header,.header-inner,.brand,.nav-links a,.hero-art,.service-card,.price-card,.blog-card,.review-card,.btn{transition:background-color .28s ease,border-color .28s ease,color .28s ease,box-shadow .28s ease,transform .28s ease}
 }
+
+
+/* MOBILE HEADER FIX — clean white bar, clear CTA, vertical menu */
+@media (max-width: 700px) {
+  .site-header,
+  .site-header.is-compact {
+    background: #FFFFFF !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .06) !important;
+    backdrop-filter: blur(16px) !important;
+  }
+  .site-header .header-inner,
+  .site-header.is-compact .header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 8px 12px !important;
+    min-height: 68px;
+    gap: 10px !important;
+    background: #FFFFFF !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .site-header .brand,
+  .site-header.is-compact .brand {
+    color: #0F172A !important;
+  }
+  .site-header .brand-x,
+  .site-header.is-compact .brand-x {
+    color: #FF6B2C !important;
+  }
+  .mobile-signup {
+    color: #FFFFFF !important;
+    background: #FF6B2C !important;
+    border-color: #FF6B2C !important;
+  }
+  .menu-toggle {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    border-color: #D6DEE9 !important;
+  }
+  .menu-toggle span,
+  .menu-toggle span:before,
+  .menu-toggle span:after {
+    background: #0F172A !important;
+  }
+  .menu-toggle[aria-expanded="true"] span {
+    background: transparent !important;
+  }
+  .nav-links,
+  .site-header.is-compact .nav-links {
+    left: 0 !important;
+    right: 0 !important;
+    top: 100% !important;
+    display: none;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 8px 18px 16px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-top: 0 !important;
+    border-radius: 0 0 18px 18px !important;
+    box-shadow: 0 18px 30px rgba(15, 23, 42, .12) !important;
+  }
+  .nav-links.is-open,
+  .site-header.is-compact .nav-links.is-open {
+    display: grid !important;
+  }
+  .nav-links a,
+  .site-header.is-compact .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 13px 8px !important;
+    margin: 0 !important;
+    text-align: left;
+    color: #0F172A !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-radius: 0 !important;
+    font-size: 15px !important;
+  }
+  .nav-links a:last-child {
+    border-bottom: 0 !important;
+  }
+  /* Keep the top orange CTA, remove the duplicate signup from the menu */
+  .nav-links .nav-signup {
+    display: none !important;
+  }
+  .nav-links .nav-login {
+    margin-top: 4px !important;
+    padding: 13px 8px !important;
+  }
+}
