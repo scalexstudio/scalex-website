@@ -380,3 +380,6 @@ h3{font-size:21px}
 /* Site-wide legibility: avoid unnecessary micro-copy */
 .service-num,.process-num,.price-name,.eyebrow,.small-note,.footer-bottom,.art-top,.art-bottom{font-size:11px}
 @media(max-width:700px){.service-num,.process-num,.price-name,.eyebrow,.small-note,.footer-bottom{font-size:10px}}
+
+/* Actual portrait images inside creator profile avatars */
+.creator-avatar{overflow:hidden;padding:0!important;background:#222!important}.creator-avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
