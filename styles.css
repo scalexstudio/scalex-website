@@ -202,3 +202,24 @@ h3{font-size:21px}
  .price{font-size:42px}
  .nav-links .nav-portal-btn{padding:10px 12px}
 }
+
+/* Mobile-first free signup CTA beside the hamburger */
+.mobile-signup{display:none}
+@media(max-width:700px){
+ .header-inner{gap:10px!important;min-height:64px!important}
+ .brand{font-size:22px!important;letter-spacing:-.07em}
+ .mobile-signup{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;white-space:nowrap;background:var(--orange);color:#111;border:1px solid var(--orange);border-radius:8px;padding:9px 11px;font-size:11px;font-weight:800;line-height:1.2}
+ .menu-toggle{width:38px!important;height:38px!important;min-width:38px;flex:0 0 38px!important}
+ .nav-links .nav-signup{display:flex}
+ .nav-links .nav-portal-btn{justify-content:center}
+ .hero-grid{gap:26px}
+ .hero-art{min-height:250px}
+ .orange-band p{font-size:19px}
+ .price-card{padding:20px}
+}
+@media(max-width:360px){
+ .header-inner{gap:7px!important}
+ .brand{font-size:19px!important}
+ .mobile-signup{font-size:10px;padding:8px 8px}
+ .menu-toggle{width:34px!important;height:34px!important;min-width:34px;flex-basis:34px!important}
+}
