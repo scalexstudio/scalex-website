@@ -586,3 +586,85 @@ h1,h2,h3{color:#0F172A}
     padding: 13px 8px !important;
   }
 }
+
+
+/* FINAL MOBILE PILL NAV — floating, narrower, with breathing room */
+@media (max-width: 700px) {
+  .site-header,
+  .site-header.is-compact {
+    position: sticky !important;
+    top: 0 !important;
+    padding: 12px 0 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+  .site-header .header-inner,
+  .site-header.is-compact .header-inner {
+    width: calc(100% - 32px) !important;
+    max-width: 480px !important;
+    min-height: 64px !important;
+    margin: 0 auto !important;
+    padding: 8px 12px !important;
+    gap: 10px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #DCE3EC !important;
+    border-radius: 999px !important;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, .14) !important;
+    position: relative !important;
+  }
+  .site-header .brand,
+  .site-header.is-compact .brand { color: #0F172A !important; }
+  .site-header .brand-x,
+  .site-header.is-compact .brand-x { color: #FF6B2C !important; }
+  .mobile-signup {
+    color: #FFFFFF !important;
+    background: #FF6B2C !important;
+    border: 1px solid #FF6B2C !important;
+    white-space: nowrap !important;
+  }
+  .menu-toggle {
+    background: #FFFFFF !important;
+    border-color: #D6DEE9 !important;
+    color: #0F172A !important;
+  }
+  .menu-toggle span,
+  .menu-toggle span:before,
+  .menu-toggle span:after { background: #0F172A !important; }
+  .menu-toggle[aria-expanded="true"] span { background: transparent !important; }
+
+  .nav-links,
+  .site-header.is-compact .nav-links {
+    top: calc(100% + 8px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    display: none;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    padding: 8px 18px 14px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #DCE3EC !important;
+    border-radius: 18px !important;
+    box-shadow: 0 16px 32px rgba(15, 23, 42, .14) !important;
+  }
+  .nav-links.is-open,
+  .site-header.is-compact .nav-links.is-open { display: grid !important; }
+  .nav-links a,
+  .site-header.is-compact .nav-links a {
+    display: block !important;
+    width: 100% !important;
+    padding: 13px 8px !important;
+    margin: 0 !important;
+    text-align: left !important;
+    color: #0F172A !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-radius: 0 !important;
+    font-size: 15px !important;
+  }
+  .nav-links .nav-signup { display: none !important; }
+  .nav-links a:last-child { border-bottom: 0 !important; }
+}
