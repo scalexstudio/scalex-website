@@ -155,3 +155,50 @@
 
 /* Pricing promotion labels */
 .price-original{font:500 22px/1.2 "DM Sans",sans-serif;letter-spacing:0;color:#888;text-decoration:line-through;vertical-align:middle;margin-right:7px}.price-discount{display:inline-flex;align-items:center;vertical-align:middle;padding:5px 8px;border-radius:5px;background:rgba(255,106,26,.13);border:1px solid rgba(255,106,26,.45);color:var(--orange);font:700 11px/1.2 "DM Sans",sans-serif;letter-spacing:.02em}
+
+/* Global compact pass: slightly reduce sizing across the whole marketing site */
+html{font-size:15px}
+body{font-size:14px}
+.container{width:min(1180px,calc(100% - 64px))}
+.announcement{font-size:10px;min-height:34px}
+:root{--header-h:68px}
+.header-inner{gap:22px}
+.brand{font-size:26px}
+.nav-links{gap:clamp(12px,1.8vw,25px)}
+.nav-links a{font-size:13px}
+.nav-links .nav-portal-btn{padding:8px 12px}
+h1{font-size:clamp(40px,6.2vw,80px)}
+h2{font-size:clamp(30px,4.2vw,54px)}
+h3{font-size:21px}
+.lead{font-size:clamp(15px,1.7vw,19px)}
+.section{padding:82px 0}
+.hero{padding:68px 0 58px}
+.hero-grid{gap:40px}
+.hero-art{min-height:390px;padding:24px}
+.art-center strong{font-size:clamp(24px,3vw,34px)}
+.service-card,.price-card,.process-item{padding:26px}
+.service-grid,.pricing-grid{gap:18px}
+.price{font-size:46px;margin:20px 0 4px}
+.price-list{font-size:13px;gap:10px}
+.btn{font-size:13px;padding:12px 18px}
+.price-original{font-size:18px}
+.price-discount{font-size:10px;padding:4px 7px}
+.small-note{font-size:12px}
+@media(max-width:900px){
+ .container{width:calc(100% - 44px)}
+ .section{padding:68px 0}
+ .hero{padding:56px 0 48px}
+ .hero-art{min-height:340px}
+}
+@media(max-width:700px){
+ .container{width:calc(100% - 32px)}
+ .brand{font-size:24px}
+ .hero{padding:44px 0 38px}
+ .hero h1{font-size:clamp(36px,10vw,54px)}
+ h2{font-size:clamp(28px,8vw,40px)}
+ .section{padding:54px 0}
+ .hero-art{min-height:280px;padding:18px}
+ .service-card,.price-card,.process-item{padding:22px}
+ .price{font-size:42px}
+ .nav-links .nav-portal-btn{padding:10px 12px}
+}
